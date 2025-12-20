@@ -1,0 +1,34 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "collection",
+      "rootUri": "file:///C:/Users/fadak/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "hasteh_core",
+      "rootUri": "../../packages/hasteh_core",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "hasteh_http",
+      "rootUri": "../../packages/hasteh_http",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "hello_hasteh",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.8.1",
+  "flutterRoot": "file:///C:/flutter",
+  "flutterVersion": "3.32.6",
+  "pubCache": "file:///C:/Users/fadak/AppData/Local/Pub/Cache"
+}

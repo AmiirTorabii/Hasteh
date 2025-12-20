@@ -1,0 +1,36 @@
+{
+  "roots": [
+    "hello_hasteh"
+  ],
+  "packages": [
+    {
+      "name": "hello_hasteh",
+      "version": "0.1.0",
+      "dependencies": [
+        "hasteh_core",
+        "hasteh_http"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "hasteh_http",
+      "version": "0.1.0",
+      "dependencies": [
+        "hasteh_core"
+      ]
+    },
+    {
+      "name": "hasteh_core",
+      "version": "0.1.0",
+      "dependencies": [
+        "collection"
+      ]
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}
