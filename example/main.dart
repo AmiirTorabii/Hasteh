@@ -1,19 +1,21 @@
 import 'package:hasteh_core/hasteh_core.dart';
-import 'package:hasteh_http/hasteh_http.dart';
-import 'hello_module.dart';
 
-Future<void> main() async {
-  final app = HastehApp();
+import 'config/app.dart';
+import 'config/database.dart';
 
-  // DI
-  app.container.register(HastehHttpServer());
 
-  // Module
-  app.register(HelloModule());
+void main() async {
+  final config = HastehConfig({
+    ...appConfig,
+    ...databaseConfig,
+  });
 
+  final app = HastehApp(config: config);
+
+  // ادامه setup (http server، moduleها، ...)
   await app.run();
 
-  // Start server
-  final httpServer = app.container.resolve<HastehHttpServer>();
-  await httpServer.start(port: 8080);
+  // برای نگه داشتن برنامه در حال اجرا
+  print('برای خروج Ctrl+C را فشار دهید');
+  await Future.delayed(Duration(days: 365)); // نگه داشتن برنامه به مدت طولانی
 }
